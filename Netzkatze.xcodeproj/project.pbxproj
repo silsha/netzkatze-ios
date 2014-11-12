@@ -10,9 +10,10 @@
 		46E0F6651A13CC9A003A7BEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0F6641A13CC9A003A7BEF /* AppDelegate.swift */; };
 		46E0F6671A13CC9A003A7BEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0F6661A13CC9A003A7BEF /* ViewController.swift */; };
 		46E0F66A1A13CC9A003A7BEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E0F6681A13CC9A003A7BEF /* Main.storyboard */; };
-		46E0F66C1A13CC9A003A7BEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46E0F66B1A13CC9A003A7BEF /* Images.xcassets */; };
 		46E0F66F1A13CC9A003A7BEF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46E0F66D1A13CC9A003A7BEF /* LaunchScreen.xib */; };
 		46E0F67B1A13CC9A003A7BEF /* NetzkatzeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0F67A1A13CC9A003A7BEF /* NetzkatzeTests.swift */; };
+		46E0F6871A13D0E3003A7BEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46E0F6861A13D0E3003A7BEF /* Images.xcassets */; };
+		46E562091A1419E900237AE1 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E562081A1419E900237AE1 /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,11 +32,13 @@
 		46E0F6641A13CC9A003A7BEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46E0F6661A13CC9A003A7BEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		46E0F6691A13CC9A003A7BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		46E0F66B1A13CC9A003A7BEF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		46E0F66E1A13CC9A003A7BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		46E0F6741A13CC9A003A7BEF /* NetzkatzeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetzkatzeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E0F6791A13CC9A003A7BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46E0F67A1A13CC9A003A7BEF /* NetzkatzeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetzkatzeTests.swift; sourceTree = "<group>"; };
+		46E0F6861A13D0E3003A7BEF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		46E562051A1415D800237AE1 /* Netzkatze-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Netzkatze-Bridging-Header.h"; sourceTree = "<group>"; };
+		46E562081A1419E900237AE1 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,7 @@
 				46E0F6611A13CC9A003A7BEF /* Netzkatze */,
 				46E0F6771A13CC9A003A7BEF /* NetzkatzeTests */,
 				46E0F6601A13CC9A003A7BEF /* Products */,
+				46E562051A1415D800237AE1 /* Netzkatze-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,9 +84,10 @@
 				46E0F6641A13CC9A003A7BEF /* AppDelegate.swift */,
 				46E0F6661A13CC9A003A7BEF /* ViewController.swift */,
 				46E0F6681A13CC9A003A7BEF /* Main.storyboard */,
-				46E0F66B1A13CC9A003A7BEF /* Images.xcassets */,
 				46E0F66D1A13CC9A003A7BEF /* LaunchScreen.xib */,
+				46E0F6861A13D0E3003A7BEF /* Images.xcassets */,
 				46E0F6621A13CC9A003A7BEF /* Supporting Files */,
+				46E562081A1419E900237AE1 /* NavigationController.swift */,
 			);
 			path = Netzkatze;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 				TargetAttributes = {
 					46E0F65E1A13CC9A003A7BEF = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 5TKBNNH75A;
 					};
 					46E0F6731A13CC9A003A7BEF = {
 						CreatedOnToolsVersion = 6.1;
@@ -192,9 +198,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46E0F6871A13D0E3003A7BEF /* Images.xcassets in Resources */,
 				46E0F66A1A13CC9A003A7BEF /* Main.storyboard in Resources */,
 				46E0F66F1A13CC9A003A7BEF /* LaunchScreen.xib in Resources */,
-				46E0F66C1A13CC9A003A7BEF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46E0F6671A13CC9A003A7BEF /* ViewController.swift in Sources */,
+				46E562091A1419E900237AE1 /* NavigationController.swift in Sources */,
 				46E0F6651A13CC9A003A7BEF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,9 +345,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Netzkatze/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Netzkatze-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -348,9 +361,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Netzkatze/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Netzkatze-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -407,6 +425,7 @@
 				46E0F6801A13CC9A003A7BEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46E0F6811A13CC9A003A7BEF /* Build configuration list for PBXNativeTarget "NetzkatzeTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +434,7 @@
 				46E0F6831A13CC9A003A7BEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
