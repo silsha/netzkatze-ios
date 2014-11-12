@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46E0F6651A13CC9A003A7BEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0F6641A13CC9A003A7BEF /* AppDelegate.swift */; };
+		46E0F6671A13CC9A003A7BEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0F6661A13CC9A003A7BEF /* ViewController.swift */; };
+		46E0F66A1A13CC9A003A7BEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E0F6681A13CC9A003A7BEF /* Main.storyboard */; };
+		46E0F66C1A13CC9A003A7BEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46E0F66B1A13CC9A003A7BEF /* Images.xcassets */; };
+		46E0F66F1A13CC9A003A7BEF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46E0F66D1A13CC9A003A7BEF /* LaunchScreen.xib */; };
+		46E0F67B1A13CC9A003A7BEF /* NetzkatzeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0F67A1A13CC9A003A7BEF /* NetzkatzeTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46E0F6751A13CC9A003A7BEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46E0F6571A13CC9A003A7BEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46E0F65E1A13CC9A003A7BEF;
+			remoteInfo = Netzkatze;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		46E0F65F1A13CC9A003A7BEF /* Netzkatze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netzkatze.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46E0F6631A13CC9A003A7BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46E0F6641A13CC9A003A7BEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46E0F6661A13CC9A003A7BEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		46E0F6691A13CC9A003A7BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46E0F66B1A13CC9A003A7BEF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		46E0F66E1A13CC9A003A7BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		46E0F6741A13CC9A003A7BEF /* NetzkatzeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetzkatzeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46E0F6791A13CC9A003A7BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46E0F67A1A13CC9A003A7BEF /* NetzkatzeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetzkatzeTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46E0F65C1A13CC9A003A7BEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46E0F6711A13CC9A003A7BEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46E0F6561A13CC9A003A7BEF = {
+			isa = PBXGroup;
+			children = (
+				46E0F6611A13CC9A003A7BEF /* Netzkatze */,
+				46E0F6771A13CC9A003A7BEF /* NetzkatzeTests */,
+				46E0F6601A13CC9A003A7BEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46E0F6601A13CC9A003A7BEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46E0F65F1A13CC9A003A7BEF /* Netzkatze.app */,
+				46E0F6741A13CC9A003A7BEF /* NetzkatzeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46E0F6611A13CC9A003A7BEF /* Netzkatze */ = {
+			isa = PBXGroup;
+			children = (
+				46E0F6641A13CC9A003A7BEF /* AppDelegate.swift */,
+				46E0F6661A13CC9A003A7BEF /* ViewController.swift */,
+				46E0F6681A13CC9A003A7BEF /* Main.storyboard */,
+				46E0F66B1A13CC9A003A7BEF /* Images.xcassets */,
+				46E0F66D1A13CC9A003A7BEF /* LaunchScreen.xib */,
+				46E0F6621A13CC9A003A7BEF /* Supporting Files */,
+			);
+			path = Netzkatze;
+			sourceTree = "<group>";
+		};
+		46E0F6621A13CC9A003A7BEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46E0F6631A13CC9A003A7BEF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46E0F6771A13CC9A003A7BEF /* NetzkatzeTests */ = {
+			isa = PBXGroup;
+			children = (
+				46E0F67A1A13CC9A003A7BEF /* NetzkatzeTests.swift */,
+				46E0F6781A13CC9A003A7BEF /* Supporting Files */,
+			);
+			path = NetzkatzeTests;
+			sourceTree = "<group>";
+		};
+		46E0F6781A13CC9A003A7BEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46E0F6791A13CC9A003A7BEF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46E0F65E1A13CC9A003A7BEF /* Netzkatze */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46E0F67E1A13CC9A003A7BEF /* Build configuration list for PBXNativeTarget "Netzkatze" */;
+			buildPhases = (
+				46E0F65B1A13CC9A003A7BEF /* Sources */,
+				46E0F65C1A13CC9A003A7BEF /* Frameworks */,
+				46E0F65D1A13CC9A003A7BEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Netzkatze;
+			productName = Netzkatze;
+			productReference = 46E0F65F1A13CC9A003A7BEF /* Netzkatze.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46E0F6731A13CC9A003A7BEF /* NetzkatzeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46E0F6811A13CC9A003A7BEF /* Build configuration list for PBXNativeTarget "NetzkatzeTests" */;
+			buildPhases = (
+				46E0F6701A13CC9A003A7BEF /* Sources */,
+				46E0F6711A13CC9A003A7BEF /* Frameworks */,
+				46E0F6721A13CC9A003A7BEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46E0F6761A13CC9A003A7BEF /* PBXTargetDependency */,
+			);
+			name = NetzkatzeTests;
+			productName = NetzkatzeTests;
+			productReference = 46E0F6741A13CC9A003A7BEF /* NetzkatzeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46E0F6571A13CC9A003A7BEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = silsha;
+				TargetAttributes = {
+					46E0F65E1A13CC9A003A7BEF = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					46E0F6731A13CC9A003A7BEF = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 46E0F65E1A13CC9A003A7BEF;
+					};
+				};
+			};
+			buildConfigurationList = 46E0F65A1A13CC9A003A7BEF /* Build configuration list for PBXProject "Netzkatze" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46E0F6561A13CC9A003A7BEF;
+			productRefGroup = 46E0F6601A13CC9A003A7BEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46E0F65E1A13CC9A003A7BEF /* Netzkatze */,
+				46E0F6731A13CC9A003A7BEF /* NetzkatzeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46E0F65D1A13CC9A003A7BEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46E0F66A1A13CC9A003A7BEF /* Main.storyboard in Resources */,
+				46E0F66F1A13CC9A003A7BEF /* LaunchScreen.xib in Resources */,
+				46E0F66C1A13CC9A003A7BEF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46E0F6721A13CC9A003A7BEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46E0F65B1A13CC9A003A7BEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46E0F6671A13CC9A003A7BEF /* ViewController.swift in Sources */,
+				46E0F6651A13CC9A003A7BEF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46E0F6701A13CC9A003A7BEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46E0F67B1A13CC9A003A7BEF /* NetzkatzeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46E0F6761A13CC9A003A7BEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46E0F65E1A13CC9A003A7BEF /* Netzkatze */;
+			targetProxy = 46E0F6751A13CC9A003A7BEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46E0F6681A13CC9A003A7BEF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46E0F6691A13CC9A003A7BEF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46E0F66D1A13CC9A003A7BEF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46E0F66E1A13CC9A003A7BEF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46E0F67C1A13CC9A003A7BEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46E0F67D1A13CC9A003A7BEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46E0F67F1A13CC9A003A7BEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Netzkatze/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		46E0F6801A13CC9A003A7BEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Netzkatze/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		46E0F6821A13CC9A003A7BEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NetzkatzeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Netzkatze.app/Netzkatze";
+			};
+			name = Debug;
+		};
+		46E0F6831A13CC9A003A7BEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NetzkatzeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Netzkatze.app/Netzkatze";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46E0F65A1A13CC9A003A7BEF /* Build configuration list for PBXProject "Netzkatze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46E0F67C1A13CC9A003A7BEF /* Debug */,
+				46E0F67D1A13CC9A003A7BEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46E0F67E1A13CC9A003A7BEF /* Build configuration list for PBXNativeTarget "Netzkatze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46E0F67F1A13CC9A003A7BEF /* Debug */,
+				46E0F6801A13CC9A003A7BEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		46E0F6811A13CC9A003A7BEF /* Build configuration list for PBXNativeTarget "NetzkatzeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46E0F6821A13CC9A003A7BEF /* Debug */,
+				46E0F6831A13CC9A003A7BEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46E0F6571A13CC9A003A7BEF /* Project object */;
+}
