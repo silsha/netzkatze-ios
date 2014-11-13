@@ -17,25 +17,24 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNX-6S-fwM">
-                                <rect key="frame" x="0.0" y="70" width="600" height="96"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNX-6S-fwM">
+                                <rect key="frame" x="0.0" y="70" width="600" height="82"/>
                                 <color key="backgroundColor" red="0.8980392157" green="0.3803921569" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="Your tweet" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ss4-Py-gwl">
-                                <rect key="frame" x="16" y="75" width="568" height="91"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="Your tweet" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ss4-Py-gwl">
+                                <rect key="frame" x="16" y="75" width="568" height="70"/>
                                 <color key="backgroundColor" red="0.89803921568627454" green="0.38039215686274508" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.85490196078431369" green="0.86274509803921573" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="send"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGc-Cw-8LK">
-                                <rect key="frame" x="250" y="174" width="101" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGc-Cw-8LK">
+                                <rect key="frame" x="250" y="160" width="101" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="IdW-XR-KVv"/>
-                                    <constraint firstAttribute="width" constant="101" id="bcQ-ZD-kQD"/>
+                                    <constraint firstAttribute="width" constant="101" id="iu7-Vm-4f6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="tintColor" red="0.85490196078431369" green="0.86274509803921573" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
@@ -46,37 +45,39 @@
                                     <action selector="sendTweet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JeB-2u-Z0u"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@netzkatze ist ein anonymer Twitteraccount. Verschickte Tweets können nicht mehr gelöscht werden." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6t5-Ok-5EX">
-                                <rect key="frame" x="16" y="210" width="568" height="119"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sending …" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O54-8C-Fqp">
+                                <rect key="frame" x="258" y="99" width="85" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="d6M-uI-Qxc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.85490196080000003" green="0.86274509799999999" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sending …" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O54-8C-Fqp">
-                                <rect key="frame" x="258" y="210" width="85" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="@netzkatze ist ein anonymer Twitteraccount. Verschickte Tweets können nicht mehr gelöscht werden." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6t5-Ok-5EX">
+                                <rect key="frame" x="16" y="173" width="568" height="119"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.85490196080000003" green="0.86274509799999999" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.8784313725490196" green="0.47450980392156861" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Ss4-Py-gwl" firstAttribute="trailing" secondItem="6t5-Ok-5EX" secondAttribute="trailing" id="813-jZ-Ilf"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="O54-8C-Fqp" secondAttribute="bottom" constant="320" id="8hX-go-XN0"/>
-                            <constraint firstItem="Ss4-Py-gwl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9HO-jE-wAV"/>
-                            <constraint firstItem="XNX-6S-fwM" firstAttribute="centerX" secondItem="Ss4-Py-gwl" secondAttribute="centerX" id="ENj-94-EOZ"/>
-                            <constraint firstItem="XNX-6S-fwM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="6" id="H8c-vY-4s5"/>
-                            <constraint firstItem="Ss4-Py-gwl" firstAttribute="leading" secondItem="6t5-Ok-5EX" secondAttribute="leading" id="K1F-sc-V88"/>
-                            <constraint firstItem="6t5-Ok-5EX" firstAttribute="top" secondItem="EGc-Cw-8LK" secondAttribute="bottom" constant="6" id="Nrx-0X-xaq"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6t5-Ok-5EX" secondAttribute="bottom" constant="222" id="Og2-EG-QMZ"/>
-                            <constraint firstItem="6t5-Ok-5EX" firstAttribute="centerX" secondItem="O54-8C-Fqp" secondAttribute="centerX" id="TtV-90-oq4"/>
-                            <constraint firstItem="O54-8C-Fqp" firstAttribute="centerX" secondItem="EGc-Cw-8LK" secondAttribute="centerX" id="Xlg-cs-hqw"/>
-                            <constraint firstItem="EGc-Cw-8LK" firstAttribute="top" secondItem="Ss4-Py-gwl" secondAttribute="bottom" constant="8" symbolic="YES" id="bNJ-yC-6gF"/>
-                            <constraint firstItem="XNX-6S-fwM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="e1G-U4-UdG"/>
-                            <constraint firstAttribute="trailing" secondItem="XNX-6S-fwM" secondAttribute="trailing" id="hmJ-i3-49h"/>
-                            <constraint firstItem="EGc-Cw-8LK" firstAttribute="top" secondItem="XNX-6S-fwM" secondAttribute="bottom" constant="8" symbolic="YES" id="irM-DD-4DQ"/>
-                            <constraint firstItem="Ss4-Py-gwl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="11" id="kxE-G6-k7T"/>
-                            <constraint firstItem="6t5-Ok-5EX" firstAttribute="top" secondItem="O54-8C-Fqp" secondAttribute="top" id="uEj-oM-Zj1"/>
+                            <constraint firstItem="O54-8C-Fqp" firstAttribute="centerX" secondItem="XNX-6S-fwM" secondAttribute="centerX" id="5ea-e6-5ub"/>
+                            <constraint firstAttribute="trailing" secondItem="XNX-6S-fwM" secondAttribute="trailing" id="7l4-by-EJA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6t5-Ok-5EX" secondAttribute="bottom" constant="259" id="DUp-47-98C"/>
+                            <constraint firstItem="6t5-Ok-5EX" firstAttribute="leading" secondItem="Ss4-Py-gwl" secondAttribute="leading" id="M0W-rd-obz"/>
+                            <constraint firstItem="O54-8C-Fqp" firstAttribute="centerX" secondItem="EGc-Cw-8LK" secondAttribute="centerX" id="UAf-Eh-Jya"/>
+                            <constraint firstItem="XNX-6S-fwM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VkA-ld-csE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EGc-Cw-8LK" secondAttribute="bottom" constant="361" id="aHT-T0-ORH"/>
+                            <constraint firstItem="Ss4-Py-gwl" firstAttribute="centerX" secondItem="O54-8C-Fqp" secondAttribute="centerX" id="b0Y-vL-VKM"/>
+                            <constraint firstItem="Ss4-Py-gwl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="11" id="iFz-39-1d4"/>
+                            <constraint firstItem="XNX-6S-fwM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="6" id="iqr-Lh-ETk"/>
+                            <constraint firstItem="6t5-Ok-5EX" firstAttribute="top" secondItem="XNX-6S-fwM" secondAttribute="bottom" constant="21" id="kQb-7P-39q"/>
+                            <constraint firstItem="6t5-Ok-5EX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="keg-9F-rTh"/>
+                            <constraint firstItem="6t5-Ok-5EX" firstAttribute="trailing" secondItem="Ss4-Py-gwl" secondAttribute="trailing" id="mL3-Si-PZ1"/>
+                            <constraint firstItem="EGc-Cw-8LK" firstAttribute="top" secondItem="XNX-6S-fwM" secondAttribute="bottom" constant="8" symbolic="YES" id="t8g-Pd-GKJ"/>
+                            <constraint firstItem="O54-8C-Fqp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="wdp-by-Zhf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Netzkatze" id="uYq-X8-P9D"/>
