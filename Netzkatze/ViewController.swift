@@ -13,10 +13,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var naivationbar: UINavigationItem!
     @IBOutlet weak var input: UITextField!
+    @IBOutlet weak var sending: UILabel!
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        dispatch_async(dispatch_get_main_queue()) {
+            self.sending.text = "";
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,6 +29,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sendTweet(sender: UIButton) {
+        dispatch_async(dispatch_get_main_queue()) {
+            self.sending.text = "Sending …";
+        }
         let url : String = "https://netzkatze.ohai.su/~lutoma/cgi-bin/netzkatze-jsonsubmit.py";
         var request : NSMutableURLRequest = NSMutableURLRequest();
         request.URL = NSURL(string: url);
@@ -39,6 +46,7 @@ class ViewController: UIViewController {
             
             dispatch_async(dispatch_get_main_queue()) {
                 self.input.text = "";
+                self.sending.text = "";
             }
             
             

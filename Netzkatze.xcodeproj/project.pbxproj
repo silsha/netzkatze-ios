@@ -10,7 +10,6 @@
 		46E0F6651A13CC9A003A7BEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0F6641A13CC9A003A7BEF /* AppDelegate.swift */; };
 		46E0F6671A13CC9A003A7BEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0F6661A13CC9A003A7BEF /* ViewController.swift */; };
 		46E0F66A1A13CC9A003A7BEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E0F6681A13CC9A003A7BEF /* Main.storyboard */; };
-		46E0F66F1A13CC9A003A7BEF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46E0F66D1A13CC9A003A7BEF /* LaunchScreen.xib */; };
 		46E0F67B1A13CC9A003A7BEF /* NetzkatzeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0F67A1A13CC9A003A7BEF /* NetzkatzeTests.swift */; };
 		46E0F6871A13D0E3003A7BEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46E0F6861A13D0E3003A7BEF /* Images.xcassets */; };
 		46E562091A1419E900237AE1 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E562081A1419E900237AE1 /* NavigationController.swift */; };
@@ -32,7 +31,6 @@
 		46E0F6641A13CC9A003A7BEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46E0F6661A13CC9A003A7BEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		46E0F6691A13CC9A003A7BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		46E0F66E1A13CC9A003A7BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		46E0F6741A13CC9A003A7BEF /* NetzkatzeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetzkatzeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E0F6791A13CC9A003A7BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46E0F67A1A13CC9A003A7BEF /* NetzkatzeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetzkatzeTests.swift; sourceTree = "<group>"; };
@@ -84,7 +82,6 @@
 				46E0F6641A13CC9A003A7BEF /* AppDelegate.swift */,
 				46E0F6661A13CC9A003A7BEF /* ViewController.swift */,
 				46E0F6681A13CC9A003A7BEF /* Main.storyboard */,
-				46E0F66D1A13CC9A003A7BEF /* LaunchScreen.xib */,
 				46E0F6861A13D0E3003A7BEF /* Images.xcassets */,
 				46E0F6621A13CC9A003A7BEF /* Supporting Files */,
 				46E562081A1419E900237AE1 /* NavigationController.swift */,
@@ -200,7 +197,6 @@
 			files = (
 				46E0F6871A13D0E3003A7BEF /* Images.xcassets in Resources */,
 				46E0F66A1A13CC9A003A7BEF /* Main.storyboard in Resources */,
-				46E0F66F1A13CC9A003A7BEF /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,14 +245,6 @@
 				46E0F6691A13CC9A003A7BEF /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		46E0F66D1A13CC9A003A7BEF /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				46E0F66E1A13CC9A003A7BEF /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
