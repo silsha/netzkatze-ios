@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		467C2C6A1A7E089700FBA773 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467C2C671A7E089700FBA773 /* TwitterKit.framework */; };
+		467C2C6B1A7E089700FBA773 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 467C2C681A7E089700FBA773 /* TwitterKitResources.bundle */; };
+		467C2C6C1A7E089700FBA773 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467C2C691A7E089700FBA773 /* Fabric.framework */; };
 		46E0F6651A13CC9A003A7BEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0F6641A13CC9A003A7BEF /* AppDelegate.swift */; };
 		46E0F6671A13CC9A003A7BEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0F6661A13CC9A003A7BEF /* ViewController.swift */; };
 		46E0F66A1A13CC9A003A7BEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E0F6681A13CC9A003A7BEF /* Main.storyboard */; };
@@ -25,7 +28,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		467C2C1F1A7E000100FBA773 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		462845D71A7FE30800FE8900 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		467C2C671A7E089700FBA773 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		467C2C681A7E089700FBA773 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		467C2C691A7E089700FBA773 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		46E0F65F1A13CC9A003A7BEF /* Netzkatze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netzkatze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E0F6631A13CC9A003A7BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46E0F6641A13CC9A003A7BEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				467C2C6A1A7E089700FBA773 /* TwitterKit.framework in Frameworks */,
+				467C2C6C1A7E089700FBA773 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +82,9 @@
 		46E0F6561A13CC9A003A7BEF = {
 			isa = PBXGroup;
 			children = (
+				467C2C671A7E089700FBA773 /* TwitterKit.framework */,
+				467C2C681A7E089700FBA773 /* TwitterKitResources.bundle */,
+				467C2C691A7E089700FBA773 /* Fabric.framework */,
 				46E0F6611A13CC9A003A7BEF /* Netzkatze */,
 				46E0F6771A13CC9A003A7BEF /* NetzkatzeTests */,
 				46E0F6601A13CC9A003A7BEF /* Products */,
@@ -124,6 +149,8 @@
 				46E0F65B1A13CC9A003A7BEF /* Sources */,
 				46E0F65C1A13CC9A003A7BEF /* Frameworks */,
 				46E0F65D1A13CC9A003A7BEF /* Resources */,
+				467C2C1F1A7E000100FBA773 /* Embed Frameworks */,
+				467C2C661A7E084700FBA773 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -173,10 +200,9 @@
 			};
 			buildConfigurationList = 46E0F65A1A13CC9A003A7BEF /* Build configuration list for PBXProject "Netzkatze" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = German;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = 46E0F6561A13CC9A003A7BEF;
@@ -196,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46E0F6871A13D0E3003A7BEF /* Images.xcassets in Resources */,
+				467C2C6B1A7E089700FBA773 /* TwitterKitResources.bundle in Resources */,
 				46E0F66A1A13CC9A003A7BEF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,6 +235,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		467C2C661A7E084700FBA773 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 4ab61fb854c11f07f09dc81c9c37a0081bc1fd67 cdd99531383a8e316c41458f9869b173aa4d18f7fde1861e617f84483c9ceabd\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		46E0F65B1A13CC9A003A7BEF /* Sources */ = {
@@ -243,6 +286,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				46E0F6691A13CC9A003A7BEF /* Base */,
+				462845D71A7FE30800FE8900 /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -336,6 +380,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Netzkatze/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +400,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Netzkatze/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

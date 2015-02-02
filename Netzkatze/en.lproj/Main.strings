@@ -1,0 +1,15 @@
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "2K7-Wh-I0n"; */
+"2K7-Wh-I0n.text" = "Title";
+
+/* Class = "IBUIButton"; normalTitle = "Absenden"; ObjectID = "EGc-Cw-8LK"; */
+"EGc-Cw-8LK.normalTitle" = "Absenden";
+
+/* Class = "IBUILabel"; text = "Detail"; ObjectID = "lpp-UJ-Kd3"; */
+"lpp-UJ-Kd3.text" = "Detail";
+
+/* Class = "IBUILabel"; text = "Maaunz…"; ObjectID = "mgL-6k-CAS"; */
+"mgL-6k-CAS.text" = "Maaunz…";
+
+/* Class = "IBUINavigationItem"; title = "Netzkatze"; ObjectID = "uYq-X8-P9D"; */
+"uYq-X8-P9D.title" = "Netzkatze";
