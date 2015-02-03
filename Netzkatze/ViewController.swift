@@ -9,11 +9,10 @@
 import UIKit
 import TwitterKit
 import Fabric
+import Foundation
 
 
 class ViewController: UIViewController, UITextViewDelegate, UITableViewDataSource, UITableViewDelegate, TWTRTweetViewDelegate {
-    
-    
     @IBOutlet weak var naivationbar: UINavigationItem!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var sending: UILabel!
@@ -228,8 +227,18 @@ class ViewController: UIViewController, UITextViewDelegate, UITableViewDataSourc
         return cell
     }
     
-
     
+    func JSONStringify(value: AnyObject, prettyPrinted: Bool = false) -> String {
+        var options = prettyPrinted ? NSJSONWritingOptions.PrettyPrinted : nil
+        if NSJSONSerialization.isValidJSONObject(value) {
+            if let data = NSJSONSerialization.dataWithJSONObject(value, options: options, error: nil) {
+                if let string = NSString(data: data, encoding: NSUTF8StringEncoding) {
+                    return string
+                }
+            }
+        }
+        return ""
+    }
     
 
 
@@ -241,13 +250,19 @@ class ViewController: UIViewController, UITextViewDelegate, UITableViewDataSourc
         var request : NSMutableURLRequest = NSMutableURLRequest();
         request.URL = NSURL(string: url);
         request.HTTPMethod = "POST";
-        request.HTTPBody = ("{\"tweet\":\"\(textView.text)\"}" as NSString).dataUsingEncoding(NSUTF8StringEncoding);
+        let jsonObject: [AnyObject] = [
+            ["tweet": textView.text]
+        ];
+        println(JSONStringify(jsonObject));
+        request.HTTPBody = (JSONStringify(jsonObject) as String).dataUsingEncoding(NSUTF8StringEncoding);
         
         
         
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue(), completionHandler:{ (response:NSURLResponse!, data: NSData!, error: NSError!) -> Void in
             var error: AutoreleasingUnsafeMutablePointer<NSError?> = nil
             let jsonResult: NSDictionary! = NSJSONSerialization.JSONObjectWithData(data, options:NSJSONReadingOptions.MutableContainers, error: error) as? NSDictionary
+            
+            println(error);
             
             dispatch_async(dispatch_get_main_queue()) {
                 self.textView.text = "";
