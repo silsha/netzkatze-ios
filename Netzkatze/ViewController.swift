@@ -18,6 +18,8 @@ class ViewController: UIViewController, UITextViewDelegate, UITableViewDataSourc
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var sending: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var counter: UILabel!
+    @IBOutlet weak var send: UIButton!
     
     // setup a 'container' for Tweets
     var tweets: [TWTRTweet] = [] {
@@ -53,6 +55,8 @@ class ViewController: UIViewController, UITextViewDelegate, UITableViewDataSourc
         self.tableView.registerClass(TWTRTweetTableViewCell.self, forCellReuseIdentifier: tweetTableCellReuseIdentifier)
         // Setup table data
         
+        self.counter.text = "";
+        
         loadTweets()
     }
     
@@ -73,6 +77,23 @@ class ViewController: UIViewController, UITextViewDelegate, UITableViewDataSourc
         
         // If updated text view will be empty, add the placeholder
         // and set the cursor to the beginning of the text view
+        if(countElements(updatedText) >= 60) {
+            self.counter.text = toString(140-countElements(updatedText));
+            if(countElements(updatedText) >= 100){
+                self.counter.textColor = UIColor.orangeColor();
+            }
+            if(countElements(updatedText) >= 135){
+                self.counter.textColor = UIColor.redColor();
+            }
+            if(countElements(updatedText) > 140){
+                self.send.enabled = false;
+            }else{
+                self.send.enabled = true;
+            }
+        }else{
+            self.counter.text = "";
+        }
+    
         if countElements(updatedText) == 0 {
             
             textView.text = "Maunz. Wie geht’s dir?"
@@ -156,33 +177,18 @@ class ViewController: UIViewController, UITextViewDelegate, UITableViewDataSourc
                         else {
                             println("Error: \(connectionError)")
                         }
-                    
-            
-            }}
-    
-        else {
-            println("Error: \(clientError)")
+            }
         }
+    
+            else {
+                    println("Error: \(clientError)")
+                }
         
-            }}}
+            }
+        }
+    }
     
     
-
-
-//            (tweetIDs) {
-//                (twttrs, error) -> Void in
-//
-//                // If there are tweets do something magical
-//                if ((twttrs) != nil) {
-//
-//                    // Loop through tweets and do something
-//                    for i in twttrs {
-//                        // Append the Tweet to the Tweets to display in the table view.
-//                        self.tweets.append(i as TWTRTweet)
-//                    }
-//                } else {
-//                    println(error)
-//                }
     
     func refreshInvoked() {
         // Trigger a load for the most recent Tweets.
